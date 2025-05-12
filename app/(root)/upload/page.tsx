@@ -166,10 +166,10 @@ const Page = () => {
                 ]}
                 onChange={handleInputChange}
             />
+            <button disabled={isSubmitting} type='submit' className='submit-button'>
+                {isSubmitting ? 'Uploading...' : 'Upload video'}
+            </button>
         </form>
-        <button disabled={isSubmitting} type='submit' className='submit-button'>
-            {isSubmitting ? 'Uploading...' : 'Upload video'}
-        </button>
     </div>
   )
 }
