@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Mr-Smiley-s-workspace-f4a4lq.eu-central-1.xata.sh/db/smiley_snapcast",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
