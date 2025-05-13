@@ -90,6 +90,7 @@ declare interface VideoDetailHeaderProps {
   ownerId: string;
   visibility: string;
   thumbnailUrl: string;
+  id: string;
 }
 
 declare interface VideoPlayerProps {
@@ -261,7 +262,7 @@ declare interface MediaStreams {
 
 declare interface BunnyRecordingState {
   isRecording: boolean;
-  recordedBlob: Blob | null;
+  recordedBlob: Blob;
   recordedVideoUrl: string;
   recordingDuration: number;
 }
