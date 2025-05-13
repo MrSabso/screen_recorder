@@ -6,7 +6,7 @@ import { getAllVideos } from '@/lib/actions/video'
 const Page = async ({ searchParams }: SearchParams) => {
   const { query, filter, page } = await searchParams 
 
-  const { videos, pagination } = await getAllVideos(query, filter, Number(page) || 1)
+  const { videos } = await getAllVideos(query, filter, Number(page) || 1)
 
   return (
     <main className='wrapper page'>
