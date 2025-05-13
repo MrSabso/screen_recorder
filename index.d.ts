@@ -262,7 +262,7 @@ declare interface MediaStreams {
 
 declare interface BunnyRecordingState {
   isRecording: boolean;
-  recordedBlob: Blob;
+  recordedBlob: Blob | null;
   recordedVideoUrl: string;
   recordingDuration: number;
 }
